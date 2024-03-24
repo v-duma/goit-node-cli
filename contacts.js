@@ -1,7 +1,9 @@
 import { promises as fs } from "fs";
 import path from "path";
 
-const contactsPath = path.join("./db/contacts.json");
+const folderPath = "./db";
+const fileName = "contacts.json";
+const contactsPath = path.join(folderPath, fileName);
 
 async function listContacts() {
   try {
